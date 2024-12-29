@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkobsrvr_docs=self.webpackChunkobsrvr_docs||[]).push([[4446],{1202:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/obsrvr-docs/blog/tags/docusaurus","allTagsPath":"/obsrvr-docs/blog/tags","count":4,"unlisted":false}')}}]);

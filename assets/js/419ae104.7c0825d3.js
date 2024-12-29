@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkobsrvr_docs=self.webpackChunkobsrvr_docs||[]).push([[6070],{2089:s=>{s.exports=JSON.parse('{"permalink":"/obsrvr-docs/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
