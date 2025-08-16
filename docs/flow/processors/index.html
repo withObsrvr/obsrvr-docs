@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-flow/processors/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Processors Overview | Obsrvr Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.withobsrvr.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.withobsrvr.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.withobsrvr.com/docs/flow/processors/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Processors Overview | Obsrvr Documentation"><meta data-rh="true" name="description" content="Processors are the core components that transform raw blockchain data into structured, actionable information. Each processor is designed for specific use cases and data types on the Stellar and Soroban networks."><meta data-rh="true" property="og:description" content="Processors are the core components that transform raw blockchain data into structured, actionable information. Each processor is designed for specific use cases and data types on the Stellar and Soroban networks."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.withobsrvr.com/docs/flow/processors/"><link data-rh="true" rel="alternate" href="https://docs.withobsrvr.com/docs/flow/processors/" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.withobsrvr.com/docs/flow/processors/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Processors Overview","item":"https://docs.withobsrvr.com/docs/flow/processors/"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Obsrvr Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Obsrvr Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.8cd6ef49.css">
+<script src="/assets/js/runtime~main.e005dda7.js" defer="defer"></script>
+<script src="/assets/js/main.745aea50.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/obsrvr_black.png" alt="Obsrvr Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/obsrvr_white.png" alt="Obsrvr Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Docs</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/withObsrvr/docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/gateway/overview">Gateway</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/gateway/overview">Gateway Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/gateway/guides/stellar-rpc-full-history">Guides</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/flow/overview">Flow</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/flow/overview">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/getting-started/quickstart">Getting Started</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/concepts/pipelines">Concepts</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/flow/processors/">Processors</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/flow/processors/">Processors Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/flow/processors/payments-with-memo">Payments with Memo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/flow/processors/contract-events">Contract Events</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/consumers/">Consumers</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/flow/pricing">Pricing</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Flow</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Processors</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Processors Overview</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Processors</h1></header>
+<p>Processors are the core components that transform raw blockchain data into structured, actionable information. Each processor is designed for specific use cases and data types on the Stellar and Soroban networks.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="available-processors">Available Processors<a href="#available-processors" class="hash-link" aria-label="Direct link to Available Processors" title="Direct link to Available Processors">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="payment-processing">Payment Processing<a href="#payment-processing" class="hash-link" aria-label="Direct link to Payment Processing" title="Direct link to Payment Processing">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="payments-with-memo"><a href="/docs/flow/processors/payments-with-memo">Payments with Memo</a><a href="#payments-with-memo" class="hash-link" aria-label="Direct link to payments-with-memo" title="Direct link to payments-with-memo">​</a></h4>
+<p>Process payment operations with memo field filtering. Perfect for:</p>
+<ul>
+<li>Invoice reconciliation systems</li>
+<li>Payment tracking with reference IDs</li>
+<li>Multi-tenant payment processing</li>
+</ul>
+<p><strong>Configuration Options:</strong></p>
+<ul>
+<li>Filter by minimum amount</li>
+<li>Match specific memo text</li>
+<li>Filter by asset code</li>
+<li>Monitor specific addresses</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transaction-processing">Transaction Processing<a href="#transaction-processing" class="hash-link" aria-label="Direct link to Transaction Processing" title="Direct link to Transaction Processing">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="raw-transactions">Raw Transactions<a href="#raw-transactions" class="hash-link" aria-label="Direct link to Raw Transactions" title="Direct link to Raw Transactions">​</a></h4>
+<p>Access and process all network transactions without filtering. Ideal for:</p>
+<ul>
+<li>Complete transaction history</li>
+<li>Network-wide analytics</li>
+<li>Custom transaction processing</li>
+</ul>
+<p><strong>Configuration Options:</strong></p>
+<ul>
+<li>Filter by transaction types</li>
+<li>Full transaction envelope access</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="account-monitoring">Account Monitoring<a href="#account-monitoring" class="hash-link" aria-label="Direct link to Account Monitoring" title="Direct link to Account Monitoring">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="account-balance">Account Balance<a href="#account-balance" class="hash-link" aria-label="Direct link to Account Balance" title="Direct link to Account Balance">​</a></h4>
+<p>Track balance changes for specified accounts. Essential for:</p>
+<ul>
+<li>Treasury management</li>
+<li>Wallet balance monitoring</li>
+<li>Portfolio tracking</li>
+</ul>
+<p><strong>Configuration Options:</strong></p>
+<ul>
+<li>Monitor multiple accounts</li>
+<li>Filter by specific assets</li>
+<li>Real-time balance updates</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="soroban-contract-processing">Soroban Contract Processing<a href="#soroban-contract-processing" class="hash-link" aria-label="Direct link to Soroban Contract Processing" title="Direct link to Soroban Contract Processing">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="contract-events"><a href="/docs/flow/processors/contract-events">Contract Events</a><a href="#contract-events" class="hash-link" aria-label="Direct link to contract-events" title="Direct link to contract-events">​</a></h4>
+<p>Subscribe to Soroban smart contract events for:</p>
+<ul>
+<li>DeFi protocol monitoring</li>
+<li>dApp event tracking</li>
+<li>Custom contract analytics</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="contract-invocation">Contract Invocation<a href="#contract-invocation" class="hash-link" aria-label="Direct link to Contract Invocation" title="Direct link to Contract Invocation">​</a></h4>
+<p>Track all contract invocations with detailed information about:</p>
+<ul>
+<li>Function calls</li>
+<li>Parameters</li>
+<li>Results</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="contract-filter">Contract Filter<a href="#contract-filter" class="hash-link" aria-label="Direct link to Contract Filter" title="Direct link to Contract Filter">​</a></h4>
+<p>Filter events by specific contract IDs for targeted monitoring of:</p>
+<ul>
+<li>Your deployed contracts</li>
+<li>Third-party protocol contracts</li>
+<li>Specific contract interactions</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="contract-data">Contract Data<a href="#contract-data" class="hash-link" aria-label="Direct link to Contract Data" title="Direct link to Contract Data">​</a></h4>
+<p>Process contract data changes on the Soroban network for:</p>
+<ul>
+<li>State change monitoring</li>
+<li>Contract storage analytics</li>
+<li>Data integrity tracking</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="extracted-contract-invocation">Extracted Contract Invocation<a href="#extracted-contract-invocation" class="hash-link" aria-label="Direct link to Extracted Contract Invocation" title="Direct link to Extracted Contract Invocation">​</a></h4>
+<p>Extract structured business data from contract invocations using configurable schemas. Perfect for:</p>
+<ul>
+<li>Custom business logic extraction</li>
+<li>Structured data pipelines</li>
+<li>Domain-specific processing</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="network-metrics">Network Metrics<a href="#network-metrics" class="hash-link" aria-label="Direct link to Network Metrics" title="Direct link to Network Metrics">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="latest-ledger-metrics">Latest Ledger Metrics<a href="#latest-ledger-metrics" class="hash-link" aria-label="Direct link to Latest Ledger Metrics" title="Direct link to Latest Ledger Metrics">​</a></h4>
+<p>Real-time network statistics and metrics including:</p>
+<ul>
+<li>Latest ledger information</li>
+<li>Transaction counts</li>
+<li>Network health indicators</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="defi-specific">DeFi Specific<a href="#defi-specific" class="hash-link" aria-label="Direct link to DeFi Specific" title="Direct link to DeFi Specific">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="swapservice">SwapService<a href="#swapservice" class="hash-link" aria-label="Direct link to SwapService" title="Direct link to SwapService">​</a></h4>
+<p>Specialized processor for Soroswap DEX events:</p>
+<ul>
+<li>Swap transactions</li>
+<li>Liquidity events</li>
+<li>Price tracking</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="account-data">Account Data<a href="#account-data" class="hash-link" aria-label="Direct link to Account Data" title="Direct link to Account Data">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="account-data-1">Account Data<a href="#account-data-1" class="hash-link" aria-label="Direct link to Account Data" title="Direct link to Account Data">​</a></h4>
+<p>Process Stellar account data changes including:</p>
+<ul>
+<li>Account creation/updates</li>
+<li>Trustline modifications</li>
+<li>Account flags and thresholds</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="choosing-the-right-processor">Choosing the Right Processor<a href="#choosing-the-right-processor" class="hash-link" aria-label="Direct link to Choosing the Right Processor" title="Direct link to Choosing the Right Processor">​</a></h2>
+<p>Consider these factors when selecting a processor:</p>
+<ol>
+<li><strong>Data Requirements</strong>: What specific blockchain data do you need?</li>
+<li><strong>Performance</strong>: Some processors are more resource-intensive than others</li>
+<li><strong>Filtering Needs</strong>: Many processors offer built-in filtering options</li>
+<li><strong>Output Format</strong>: Each processor outputs data in a specific structure</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="processor-configuration">Processor Configuration<a href="#processor-configuration" class="hash-link" aria-label="Direct link to Processor Configuration" title="Direct link to Processor Configuration">​</a></h2>
+<p>All processors support configuration through the Flow pipeline builder. Common configuration patterns include:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;processor_type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;payments_memo&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;config&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;memo_text&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;invoice-2024&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;min_amount&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;100&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;asset_code&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;USDC&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combining-processors">Combining Processors<a href="#combining-processors" class="hash-link" aria-label="Direct link to Combining Processors" title="Direct link to Combining Processors">​</a></h2>
+<p>You can chain multiple processors in a single pipeline for complex data processing scenarios. For example:</p>
+<ul>
+<li>Use Contract Filter → Contract Events for targeted event monitoring</li>
+<li>Combine Account Balance → Latest Ledger for balance snapshots</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-considerations">Performance Considerations<a href="#performance-considerations" class="hash-link" aria-label="Direct link to Performance Considerations" title="Direct link to Performance Considerations">​</a></h2>
+<ul>
+<li><strong>Filtered processors</strong> (like Payments with Memo) are more efficient than processing all data</li>
+<li><strong>Account-specific processors</strong> scale better than network-wide processors</li>
+<li><strong>Contract processors</strong> require Soroban-enabled networks</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<ul>
+<li>Explore individual processor documentation for detailed configuration options</li>
+<li>Learn about <a href="/docs/flow/consumers/">consumers</a> to deliver your processed data</li>
+<li>Check our <a href="/docs/flow/getting-started/quickstart">Getting Started Guide</a> for hands-on examples</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/flow/concepts/pipelines"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Pipelines</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/flow/processors/payments-with-memo"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Payments with Memo</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#available-processors" class="table-of-contents__link toc-highlight">Available Processors</a><ul><li><a href="#payment-processing" class="table-of-contents__link toc-highlight">Payment Processing</a></li><li><a href="#transaction-processing" class="table-of-contents__link toc-highlight">Transaction Processing</a></li><li><a href="#account-monitoring" class="table-of-contents__link toc-highlight">Account Monitoring</a></li><li><a href="#soroban-contract-processing" class="table-of-contents__link toc-highlight">Soroban Contract Processing</a></li><li><a href="#network-metrics" class="table-of-contents__link toc-highlight">Network Metrics</a></li><li><a href="#defi-specific" class="table-of-contents__link toc-highlight">DeFi Specific</a></li><li><a href="#account-data" class="table-of-contents__link toc-highlight">Account Data</a></li></ul></li><li><a href="#choosing-the-right-processor" class="table-of-contents__link toc-highlight">Choosing the Right Processor</a></li><li><a href="#processor-configuration" class="table-of-contents__link toc-highlight">Processor Configuration</a></li><li><a href="#combining-processors" class="table-of-contents__link toc-highlight">Combining Processors</a></li><li><a href="#performance-considerations" class="table-of-contents__link toc-highlight">Performance Considerations</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/withObsrvr" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/withObsrvr/docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 OBSRVR, Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

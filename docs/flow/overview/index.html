@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-flow/overview" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Overview | Obsrvr Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.withobsrvr.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.withobsrvr.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.withobsrvr.com/docs/flow/overview"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Overview | Obsrvr Documentation"><meta data-rh="true" name="description" content="Flow is Obsrvr&#x27;s data pipeline platform that provides infrastructure building blocks for processing Stellar and Soroban blockchain data. With Flow, you can deploy data processing pipelines with one click, stream blockchain data in real-time, and deliver it to your preferred destination - all without managing complex infrastructure."><meta data-rh="true" property="og:description" content="Flow is Obsrvr&#x27;s data pipeline platform that provides infrastructure building blocks for processing Stellar and Soroban blockchain data. With Flow, you can deploy data processing pipelines with one click, stream blockchain data in real-time, and deliver it to your preferred destination - all without managing complex infrastructure."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.withobsrvr.com/docs/flow/overview"><link data-rh="true" rel="alternate" href="https://docs.withobsrvr.com/docs/flow/overview" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.withobsrvr.com/docs/flow/overview" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Overview","item":"https://docs.withobsrvr.com/docs/flow/overview"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Obsrvr Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Obsrvr Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.8cd6ef49.css">
+<script src="/assets/js/runtime~main.e005dda7.js" defer="defer"></script>
+<script src="/assets/js/main.745aea50.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/obsrvr_black.png" alt="Obsrvr Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/obsrvr_white.png" alt="Obsrvr Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Docs</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/withObsrvr/docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/gateway/overview">Gateway</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/gateway/overview">Gateway Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/gateway/guides/stellar-rpc-full-history">Guides</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/flow/overview">Flow</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/flow/overview">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/getting-started/quickstart">Getting Started</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/concepts/pipelines">Concepts</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/processors/">Processors</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/flow/consumers/">Consumers</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/flow/pricing">Pricing</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Flow</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Overview</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Flow: Data Pipeline Platform for Stellar &amp; Soroban</h1></header>
+<p>Flow is Obsrvr&#x27;s data pipeline platform that provides infrastructure building blocks for processing Stellar and Soroban blockchain data. With Flow, you can deploy data processing pipelines with one click, stream blockchain data in real-time, and deliver it to your preferred destination - all without managing complex infrastructure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-flow">What is Flow?<a href="#what-is-flow" class="hash-link" aria-label="Direct link to What is Flow?" title="Direct link to What is Flow?">​</a></h2>
+<p>Flow enables developers to:</p>
+<ul>
+<li><strong>Stream blockchain data</strong> from Stellar and Soroban networks</li>
+<li><strong>Process data</strong> using pre-built or custom processors</li>
+<li><strong>Deliver results</strong> to databases, webhooks, message queues, or cloud storage</li>
+<li><strong>Pay only for what you use</strong> with per-minute billing</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-one-click-deployment">🚀 One-Click Deployment<a href="#-one-click-deployment" class="hash-link" aria-label="Direct link to 🚀 One-Click Deployment" title="Direct link to 🚀 One-Click Deployment">​</a></h3>
+<p>Deploy production-ready data pipelines instantly without DevOps complexity. Flow handles all the infrastructure, scaling, and orchestration for you.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-full-historical-data">📊 Full Historical Data<a href="#-full-historical-data" class="hash-link" aria-label="Direct link to 📊 Full Historical Data" title="Direct link to 📊 Full Historical Data">​</a></h3>
+<p>Start processing from any ledger point - whether from the latest ledger or from genesis. Perfect for both real-time monitoring and historical analysis.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-multiple-destinations">🔌 Multiple Destinations<a href="#-multiple-destinations" class="hash-link" aria-label="Direct link to 🔌 Multiple Destinations" title="Direct link to 🔌 Multiple Destinations">​</a></h3>
+<p>Send processed data wherever you need it:</p>
+<ul>
+<li><strong>Databases</strong>: PostgreSQL, DuckDB, SQLite, Redis</li>
+<li><strong>Streaming</strong>: Kafka, Webhooks, ZeroMQ</li>
+<li><strong>Storage</strong>: Amazon S3</li>
+<li><strong>Custom</strong>: Build your own consumer</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-real-time-monitoring">📈 Real-Time Monitoring<a href="#-real-time-monitoring" class="hash-link" aria-label="Direct link to 📈 Real-Time Monitoring" title="Direct link to 📈 Real-Time Monitoring">​</a></h3>
+<p>Track pipeline performance with:</p>
+<ul>
+<li>Live status updates</li>
+<li>Real-time log streaming</li>
+<li>Usage metrics and cost tracking</li>
+<li>Deployment error details</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-pay-as-you-go-pricing">💰 Pay-As-You-Go Pricing<a href="#-pay-as-you-go-pricing" class="hash-link" aria-label="Direct link to 💰 Pay-As-You-Go Pricing" title="Direct link to 💰 Pay-As-You-Go Pricing">​</a></h3>
+<p>Simple, transparent pricing at <strong>$0.003 per minute</strong> of pipeline runtime:</p>
+<ul>
+<li>First 100 minutes free for new users</li>
+<li>No setup fees or minimum commitments</li>
+<li>Only pay when pipelines are running</li>
+<li>Monthly billing with detailed usage reports</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases">Use Cases<a href="#use-cases" class="hash-link" aria-label="Direct link to Use Cases" title="Direct link to Use Cases">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="payment-processing">Payment Processing<a href="#payment-processing" class="hash-link" aria-label="Direct link to Payment Processing" title="Direct link to Payment Processing">​</a></h3>
+<p>Track and process payments with specific memo patterns for:</p>
+<ul>
+<li>Invoice reconciliation</li>
+<li>Customer payment tracking</li>
+<li>Multi-signature payment monitoring</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contract-event-monitoring">Contract Event Monitoring<a href="#contract-event-monitoring" class="hash-link" aria-label="Direct link to Contract Event Monitoring" title="Direct link to Contract Event Monitoring">​</a></h3>
+<p>Subscribe to Soroban smart contract events for:</p>
+<ul>
+<li>DeFi protocol monitoring</li>
+<li>NFT marketplace activity</li>
+<li>Custom dApp analytics</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="account-balance-tracking">Account Balance Tracking<a href="#account-balance-tracking" class="hash-link" aria-label="Direct link to Account Balance Tracking" title="Direct link to Account Balance Tracking">​</a></h3>
+<p>Monitor account balance changes for:</p>
+<ul>
+<li>Treasury management</li>
+<li>Wallet analytics</li>
+<li>Liquidity monitoring</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="network-analytics">Network Analytics<a href="#network-analytics" class="hash-link" aria-label="Direct link to Network Analytics" title="Direct link to Network Analytics">​</a></h3>
+<p>Process network-wide data for:</p>
+<ul>
+<li>Transaction volume analysis</li>
+<li>Asset distribution tracking</li>
+<li>Network health monitoring</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h2>
+<ol>
+<li><strong>Choose Your Network</strong>: Select between Stellar mainnet or testnet</li>
+<li><strong>Configure Your Pipeline</strong>:<!-- -->
+<ul>
+<li>Select a starting ledger (latest or specific height)</li>
+<li>Choose processors to transform the data</li>
+<li>Configure consumers for data delivery</li>
+</ul>
+</li>
+<li><strong>Deploy</strong>: One-click deployment to Obsrvr&#x27;s infrastructure</li>
+<li><strong>Monitor</strong>: Track status, view logs, and monitor usage in real-time</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architecture-overview">Architecture Overview<a href="#architecture-overview" class="hash-link" aria-label="Direct link to Architecture Overview" title="Direct link to Architecture Overview">​</a></h2>
+<p>Flow pipelines follow a simple yet powerful architecture:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Stellar/Soroban Network → Processor(s) → Consumer(s) → Your Application</span><br></span></code></pre></div></div>
+<ul>
+<li><strong>Processors</strong> transform raw blockchain data into structured formats</li>
+<li><strong>Consumers</strong> deliver the processed data to your chosen destination</li>
+<li><strong>Orchestration</strong> handled automatically by Flow&#x27;s infrastructure</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="available-components">Available Components<a href="#available-components" class="hash-link" aria-label="Direct link to Available Components" title="Direct link to Available Components">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="processors">Processors<a href="#processors" class="hash-link" aria-label="Direct link to Processors" title="Direct link to Processors">​</a></h3>
+<ul>
+<li><strong>Payments with Memo</strong>: Filter and process payment operations</li>
+<li><strong>Raw Transactions</strong>: Access all network transactions</li>
+<li><strong>Account Balance</strong>: Track balance changes</li>
+<li><strong>Contract Events</strong>: Subscribe to Soroban events</li>
+<li><strong>Latest Ledger Metrics</strong>: Real-time network statistics</li>
+<li><strong>SwapService</strong>: Track DEX activity</li>
+<li>And more...</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="consumers">Consumers<a href="#consumers" class="hash-link" aria-label="Direct link to Consumers" title="Direct link to Consumers">​</a></h3>
+<ul>
+<li><strong>PostgreSQL</strong>: Structured database storage</li>
+<li><strong>Webhooks</strong>: HTTP endpoint delivery</li>
+<li><strong>Kafka</strong>: Stream processing integration</li>
+<li><strong>Amazon S3</strong>: Cloud storage</li>
+<li><strong>Redis</strong>: Real-time data access</li>
+<li>And more...</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started">​</a></h2>
+<p>Ready to build your first pipeline? Check out our <a href="/docs/flow/getting-started/quickstart">Quickstart Guide</a> to get up and running in minutes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pricing">Pricing<a href="#pricing" class="hash-link" aria-label="Direct link to Pricing" title="Direct link to Pricing">​</a></h2>
+<p>Flow uses simple pay-as-you-go pricing:</p>
+<ul>
+<li><strong>$0.003 per minute</strong> of pipeline runtime</li>
+<li><strong>First 100 minutes free</strong> for new users</li>
+<li><strong>No setup fees</strong> or hidden costs</li>
+</ul>
+<p>See our <a href="/docs/flow/pricing">Pricing Page</a> for detailed information.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="access">Access<a href="#access" class="hash-link" aria-label="Direct link to Access" title="Direct link to Access">​</a></h2>
+<p>Flow is currently in early access. <a href="https://console.withobsrvr.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a> to get access when we expand availability.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/gateway/guides/stellar-rpc-full-history"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Stellar RPC with Full History (Testnet)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/flow/getting-started/quickstart"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Quickstart Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-is-flow" class="table-of-contents__link toc-highlight">What is Flow?</a></li><li><a href="#key-features" class="table-of-contents__link toc-highlight">Key Features</a><ul><li><a href="#-one-click-deployment" class="table-of-contents__link toc-highlight">🚀 One-Click Deployment</a></li><li><a href="#-full-historical-data" class="table-of-contents__link toc-highlight">📊 Full Historical Data</a></li><li><a href="#-multiple-destinations" class="table-of-contents__link toc-highlight">🔌 Multiple Destinations</a></li><li><a href="#-real-time-monitoring" class="table-of-contents__link toc-highlight">📈 Real-Time Monitoring</a></li><li><a href="#-pay-as-you-go-pricing" class="table-of-contents__link toc-highlight">💰 Pay-As-You-Go Pricing</a></li></ul></li><li><a href="#use-cases" class="table-of-contents__link toc-highlight">Use Cases</a><ul><li><a href="#payment-processing" class="table-of-contents__link toc-highlight">Payment Processing</a></li><li><a href="#contract-event-monitoring" class="table-of-contents__link toc-highlight">Contract Event Monitoring</a></li><li><a href="#account-balance-tracking" class="table-of-contents__link toc-highlight">Account Balance Tracking</a></li><li><a href="#network-analytics" class="table-of-contents__link toc-highlight">Network Analytics</a></li></ul></li><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How It Works</a></li><li><a href="#architecture-overview" class="table-of-contents__link toc-highlight">Architecture Overview</a></li><li><a href="#available-components" class="table-of-contents__link toc-highlight">Available Components</a><ul><li><a href="#processors" class="table-of-contents__link toc-highlight">Processors</a></li><li><a href="#consumers" class="table-of-contents__link toc-highlight">Consumers</a></li></ul></li><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a></li><li><a href="#pricing" class="table-of-contents__link toc-highlight">Pricing</a></li><li><a href="#access" class="table-of-contents__link toc-highlight">Access</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/withObsrvr" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/withObsrvr/docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 OBSRVR, Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
